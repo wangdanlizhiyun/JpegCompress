@@ -19,7 +19,9 @@ maven { url 'https://jitpack.io' }
  ```compressAndCorverOldFile(File imageFile)```
  
  示例代码：
- ```LifeUtil.permission(PermissionType.WRITE_EXTERNAL_STORAGE, PermissionType.READ_EXTERNAL_STORAGE).run(new Runnable() {
+ 
+ ```
+ LifeUtil.permission(PermissionType.WRITE_EXTERNAL_STORAGE, PermissionType.READ_EXTERNAL_STORAGE).run(new Runnable() {
                 @Override
                 public void run() {
                     File file = new File(Environment.getExternalStorageDirectory(), "danhao.jpg");
