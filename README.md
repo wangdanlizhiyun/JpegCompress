@@ -5,7 +5,7 @@
 #使用
 ```
 maven { url 'https://jitpack.io' }
-compile 'com.github.wangdanlizhiyun:JpegCompress:v1.0.0'
+compile 'com.github.wangdanlizhiyun:JpegCompress:v1.0.3'
 ```
 
 
