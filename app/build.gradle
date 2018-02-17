@@ -28,4 +28,5 @@ dependencies {
     implementation project(':jpegcompresslibrary')
 
     implementation 'com.github.wangdanlizhiyun:life:v1.0.2'
+//    compile 'com.github.wangdanlizhiyun:JpegCompress:v1.0.0'
 }

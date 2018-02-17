@@ -3,6 +3,7 @@ package lzy.com.jpegcompress;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import java.io.File;
@@ -20,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         LifeUtil.init(this);
         JpegCompressUtil.log(true);
 
+        int g = 'G';
+        int i = 'I';
+        int f = 'F';
+        Log.e("test","g="+g+"i="+i+"f="+f);
+
     }
 
     public void image(View view) {
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         LifeUtil.permission(PermissionType.WRITE_EXTERNAL_STORAGE, PermissionType.READ_EXTERNAL_STORAGE).run(new Runnable() {
             @Override
             public void run() {
-                File file = new File(Environment.getExternalStorageDirectory(), "danhao.jpg");
+                File file = new File(Environment.getExternalStorageDirectory(), "down.png");
 //              File out=new File(Environment.getExternalStorageDirectory(),"jpegeded"+".jpg0");
 //              JpegCompressUtil.compress(file,out.getAbsolutePath());
                 JpegCompressUtil.compressAndCorverOldFile(file);
