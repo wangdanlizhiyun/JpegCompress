@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         LifeUtil.init(this);
         JpegCompressUtil.log(true);
 
-        int g = 'G';
-        int i = 'I';
-        int f = 'F';
-        Log.e("test","g="+g+"i="+i+"f="+f);
 
     }
 

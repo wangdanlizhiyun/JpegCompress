@@ -36,7 +36,7 @@ public class JpegCompressUtil {
     }
 
     public static void compressAndCorverOldFile(File imageFile) {
-        if (imageFile.canWrite() && !getImageType(imageFile.getAbsolutePath()).equals("gif")){
+        if (imageFile.canWrite() && !getImageType(imageFile.getAbsolutePath()).equals("GIF")){
             compress(imageFile, imageFile.getAbsolutePath());
         }
     }
